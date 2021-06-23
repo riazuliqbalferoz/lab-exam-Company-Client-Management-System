@@ -12,7 +12,10 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+use App\Http\Controllers\loginController;
 
-Route::get('/', function () {
-    return view('login');
-});
+
+
+Route::get('/login', [loginController::class, 'login']);
+Route::get('/admin_profile', [loginController::class, 'onSelect']);
+

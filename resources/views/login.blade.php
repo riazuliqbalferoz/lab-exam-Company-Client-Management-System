@@ -9,7 +9,7 @@
 	<div class="main">
 
     <h1> All User login</h1>
-    <form method="post">
+    <form method="post" action="onSelect">
 	<table>
 		<!-- @csrf -->
 		<!-- {{csrf_field()}} -->
@@ -30,13 +30,11 @@
 	</form>
     
     </div>
-		{{session('msg')}}
-		<br>
-
-		@foreach ($errors->all() as $err)
-			{{$err}} <br>
-		@endforeach
+		
 </body>
+
+
+
 </html>
 
 <style>

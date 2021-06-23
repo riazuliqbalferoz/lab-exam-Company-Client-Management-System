@@ -7,5 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class login extends Model
 {
-    use HasFactory;
+    public $table='login';
+    public $primaryKey='id';
+    public $incrementing=true;
+    public $keyType='int';
+    public $timestamps=false;
 }

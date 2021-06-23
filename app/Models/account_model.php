@@ -7,5 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class account_model extends Model
 {
-    use HasFactory;
+    public $table='accountant';
+    public $primaryKey='id';
+    public $incrementing=true;
+    public $keyType='int';
+    public $timestamps=false;
 }

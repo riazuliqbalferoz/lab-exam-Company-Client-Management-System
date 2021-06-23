@@ -7,5 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class admin_model extends Model
 {
-    use HasFactory;
+    public $table='admin';
+    public $primaryKey='id';
+    public $incrementing=true;
+    public $keyType='int';
+    public $timestamps=false;
 }
