@@ -4,7 +4,12 @@
 	<title>All User Login </title>
 </head>
 <body>
-	<form method="post">
+
+
+	<div class="main">
+
+    <h1> All User login</h1>
+    <form method="post">
 	<table>
 		<!-- @csrf -->
 		<!-- {{csrf_field()}} -->
@@ -15,14 +20,16 @@
 		</tr>
 		<tr>
 			<td>Password</td>
-			<td><input type="password" name="password" value="{{old('password')}}"></td>
+			<td><input type="password" palceholder="Enter your password " name="password" value="{{old('password')}}"></td>
 		</tr>
 		<tr>
 			<td></td>
-			<td><input type="submit" name="Submit" value="submit"></td>
+			<td><input type="submit"  name="Submit" value="submit"></td>
 		</tr>
 	</table>
 	</form>
+    
+    </div>
 		{{session('msg')}}
 		<br>
 
@@ -32,3 +39,13 @@
 </body>
 </html>
 
+<style>
+.main{
+ padding-left: 300px;
+ padding-top: 100px;
+ padding-bottom: 100px;
+background:gray;
+text:white;
+
+}
+</style>
